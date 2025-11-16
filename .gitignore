@@ -34,7 +34,7 @@ ENV/
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb
+# *.ipynb  # Allow example notebooks
 
 # Data files
 data/cache/*.csv
