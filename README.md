@@ -4,6 +4,7 @@ A comprehensive statistical arbitrage system that identifies mean-reverting pair
 
 ## Features
 
+### Core Features
 - **Universe Selection**: S&P 500 constituents with liquidity filtering
 - **Cointegration Testing**: Engle-Granger two-step method with ADF test
 - **Spread Construction**: Normalized spreads with z-score calculation
@@ -11,6 +12,14 @@ A comprehensive statistical arbitrage system that identifies mean-reverting pair
 - **Backtesting Engine**: Walk-forward analysis with realistic transaction costs
 - **Performance Analysis**: Comprehensive metrics (Sharpe, Sortino, Max Drawdown, etc.)
 - **Interactive Dashboard**: Streamlit-based visualization of pairs and trades
+
+### Advanced Features ⭐
+- **Kalman Filter**: Dynamic hedge ratio estimation that adapts to changing market conditions
+- **Kelly Criterion**: Optimal position sizing based on win rate and risk/reward
+- **Volatility Targeting**: Risk-adjusted position sizing to maintain constant volatility exposure
+- **Sector Rotation**: Momentum-based filtering to trade only pairs in strong sectors
+- **Regime Analysis**: VIX-based market regime detection with adaptive parameters
+- **Unit Tests**: Comprehensive test suite with pytest
 
 ## Project Structure
 
@@ -102,13 +111,16 @@ streamlit run src/visualization/dashboard.py
 - Average Holding Period
 - Regime Analysis (by VIX level)
 
-## Advanced Features
+## Documentation
 
-- Dynamic hedge ratio estimation with Kalman filter
-- Volatility-adjusted position sizing
-- Sector rotation filters
-- Half-life based pair selection
-- Multi-timeframe analysis
+- **README.md**: This file - project overview
+- **QUICKSTART.md**: Step-by-step quick start guide
+- **ADVANCED_FEATURES.md**: Detailed guide for advanced features (Kalman, Kelly, etc.)
+- **notebooks/example_analysis.ipynb**: Interactive Jupyter notebook tutorial
+- **examples/**: Code examples
+  - `basic_usage.py`: Simple working example
+  - `advanced_features.py`: Demonstrates all advanced features
+  - `run_all_tests.py`: Run unit tests with coverage
 
 ## License
 
